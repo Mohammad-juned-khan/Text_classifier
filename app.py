@@ -19,7 +19,7 @@ tfidf = pickle.load(open('tfidf', 'rb'))
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('Index.html')
-@app.route("/predict", methods=['POST'])
+@app.route("/predict", methods=['GET','POST'])
 def predict():
     if request.method == 'POST':
         text = (request.form['article'])
