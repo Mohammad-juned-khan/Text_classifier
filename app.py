@@ -68,7 +68,7 @@ def predict():
         else:
             category = "Error"
 
-        return render_template('Result.html', text="Your text is based on {}. ".format(category))
+        return render_template('Index.html', text="Your text is based on {}. ".format(category))
 
 if __name__=="__main__":
     app.run(debug=True)
