@@ -23,7 +23,7 @@ def home():
     return render_template('Index.html')
 
 
-@app.route("/check", methods=['POST'])
+@app.route("/", methods=['POST'])
 def check():
 
     if request.method == 'POST':
