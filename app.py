@@ -18,7 +18,7 @@ modell = pickle.load(open('final_model', 'rb'))
 tfidf = pickle.load(open('tfidf', 'rb'))
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
     return render_template('Index.html')
 
