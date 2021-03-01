@@ -60,6 +60,7 @@ def predict():
             y_predict_userinput = modell.predict(inputpredict)
 
             return y_predict_userinput
+        
         output = input_predict(input_text)
         cat = int(output)
         if cat == 0:
